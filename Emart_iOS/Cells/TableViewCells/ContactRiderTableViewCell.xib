@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="KGk-i7-Jjw" customClass="ContactRiderTableViewCell" customModule="Emart_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="58"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2R-br-G8u" customClass="CardView" customModule="Emart_iOS" customModuleProvider="target">
+                        <rect key="frame" x="10" y="8" width="308" height="42"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baryani-1" translatesAutoresizingMaskIntoConstraints="NO" id="dFr-T8-bRH">
+                                <rect key="frame" x="8" y="1" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="90e-dw-J2g"/>
+                                    <constraint firstAttribute="height" constant="40" id="r51-qF-vQc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaU-AK-aLG">
+                                <rect key="frame" x="58" y="12" width="38.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pji-bc-8HA">
+                                <rect key="frame" x="238" y="6" width="55" height="30"/>
+                                <state key="normal" title="Contact"/>
+                                <connections>
+                                    <action selector="contactRider:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="R6P-C4-eeq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pji-bc-8HA" secondAttribute="trailing" constant="15" id="66c-X3-Tt9"/>
+                            <constraint firstItem="gaU-AK-aLG" firstAttribute="centerY" secondItem="dFr-T8-bRH" secondAttribute="centerY" id="JgI-uR-E6o"/>
+                            <constraint firstItem="dFr-T8-bRH" firstAttribute="centerY" secondItem="J2R-br-G8u" secondAttribute="centerY" id="LwU-ke-NKk"/>
+                            <constraint firstItem="gaU-AK-aLG" firstAttribute="leading" secondItem="dFr-T8-bRH" secondAttribute="trailing" constant="10" id="Q1f-cN-hBW"/>
+                            <constraint firstItem="dFr-T8-bRH" firstAttribute="leading" secondItem="J2R-br-G8u" secondAttribute="leading" constant="8" id="j9h-1m-mph"/>
+                            <constraint firstItem="Pji-bc-8HA" firstAttribute="centerY" secondItem="J2R-br-G8u" secondAttribute="centerY" id="kzc-5r-9D7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.29999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="mycornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="J2R-br-G8u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="44W-WB-Izm"/>
+                    <constraint firstAttribute="bottom" secondItem="J2R-br-G8u" secondAttribute="bottom" constant="8" id="5s9-L1-9OV"/>
+                    <constraint firstItem="J2R-br-G8u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Qwx-AN-TBe"/>
+                    <constraint firstAttribute="trailing" secondItem="J2R-br-G8u" secondAttribute="trailing" constant="10" id="gqK-c3-nMi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contactButton" destination="Pji-bc-8HA" id="T5k-Lc-ZiD"/>
+                <outlet property="nameLabel" destination="gaU-AK-aLG" id="wIw-sg-V8q"/>
+                <outlet property="profileImageView" destination="dFr-T8-bRH" id="W4M-Nf-xPb"/>
+            </connections>
+            <point key="canvasLocation" x="88.405797101449281" y="96.428571428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="baryani-1" width="1280" height="1280"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

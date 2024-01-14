@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="OrderMapLocationTableViewCell" customModule="Emart_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iiK-wU-n0M">
+                        <rect key="frame" x="0.0" y="160" width="260.5" height="31"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to track order ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxR-Ed-4XF">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejf-jt-lEa">
+                                <rect key="frame" x="160" y="0.0" width="100.5" height="31"/>
+                                <color key="tintColor" name="AppPrimaryBlueColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Track Order"/>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wL-3B-N3O">
+                        <rect key="frame" x="0.0" y="0.0" width="354" height="150"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="9Ch-BP-oXh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6wL-3B-N3O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Fjf-k0-Vei"/>
+                    <constraint firstAttribute="trailing" secondItem="6wL-3B-N3O" secondAttribute="trailing" id="MTS-As-VU4"/>
+                    <constraint firstItem="iiK-wU-n0M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Qnj-dj-uvb"/>
+                    <constraint firstItem="6wL-3B-N3O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kYI-h4-9c2"/>
+                    <constraint firstItem="iiK-wU-n0M" firstAttribute="top" secondItem="6wL-3B-N3O" secondAttribute="bottom" constant="10" id="vux-fl-a7j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="googleMapView" destination="6wL-3B-N3O" id="zzB-gF-agw"/>
+                <outlet property="trackerOrderBtn" destination="ejf-jt-lEa" id="kkp-78-8aV"/>
+            </connections>
+            <point key="canvasLocation" x="162.31884057971016" y="142.29910714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AppPrimaryBlueColor">
+            <color red="0.29800000786781311" green="0.20000000298023224" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

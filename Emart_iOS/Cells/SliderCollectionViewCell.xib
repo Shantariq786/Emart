@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SliderCollectionViewCell" id="gTV-IL-0wX" customClass="SliderCollectionViewCell" customModule="EMart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="183"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="308" height="183"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zN-k8-fRz">
+                        <rect key="frame" x="0.0" y="0.0" width="308" height="183"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delivero_logo" translatesAutoresizingMaskIntoConstraints="NO" id="tW8-el-H7q">
+                                <rect key="frame" x="12" y="8" width="284" height="167"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tW8-el-H7q" firstAttribute="leading" secondItem="9zN-k8-fRz" secondAttribute="leading" constant="12" id="2Gu-MI-aoM"/>
+                            <constraint firstAttribute="bottom" secondItem="tW8-el-H7q" secondAttribute="bottom" constant="8" id="FXF-a6-vVj"/>
+                            <constraint firstItem="tW8-el-H7q" firstAttribute="top" secondItem="9zN-k8-fRz" secondAttribute="top" constant="8" id="Ito-TY-Ap6"/>
+                            <constraint firstAttribute="trailing" secondItem="tW8-el-H7q" secondAttribute="trailing" constant="12" id="XGF-a0-fvV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9zN-k8-fRz" secondAttribute="bottom" id="G2x-ni-m44"/>
+                <constraint firstItem="9zN-k8-fRz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PcQ-p9-aWU"/>
+                <constraint firstItem="9zN-k8-fRz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fWu-5E-kM9"/>
+                <constraint firstAttribute="trailing" secondItem="9zN-k8-fRz" secondAttribute="trailing" id="wwF-nz-bjf"/>
+            </constraints>
+            <size key="customSize" width="308" height="183"/>
+            <connections>
+                <outlet property="sliderImageview" destination="tW8-el-H7q" id="t1S-N2-LsM"/>
+            </connections>
+            <point key="canvasLocation" x="240.57971014492756" y="153.01339285714286"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="tW8-el-H7q">
+            <size key="intrinsicContentSize" width="163.66666666666666" height="150.66666666666666"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="delivero_logo" width="163.66667175292969" height="150.66667175292969"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
